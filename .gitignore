@@ -1,0 +1,42 @@
+# macOS / IDE
+.DS_Store
+.idea/
+.vscode/
+
+# Python / Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Local settings and credentials
+.env
+.env.*
+!.env.example
+
+# Raw market data: keep only the public data contract
+Data/*
+!Data/README.md
+
+# Generated factor panels and diagnostics
+Factor/*_output_*/
+Validation_test/data/
+Correlation_test/data/
+
+# Runtime caches and generated experiment outputs
+**/.cache/
+Back_test/outputs/
+Validation_test/outputs/
+Correlation_test/outputs/
+
+# Temporary / columnar files
+*.parquet
+*.feather
+*.arrow
+*.tmp
+holdings.csv.gz
+
